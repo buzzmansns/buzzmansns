@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>フォローされる「プロフィール」5点チェック｜NOBISHIRO 5大特典</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Poppins:wght@700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+<header class="band">
+  <div class="in">
+    <a class="logo" href="index.html" aria-label="5大特典の一覧へ"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="26" width="8" height="14" rx="3" fill="#fff" opacity=".8"/><rect x="18" y="18" width="8" height="22" rx="3" fill="#fff" opacity=".9"/><rect x="30" y="8" width="8" height="32" rx="3" fill="#fff"/><path d="M40 4l1.6 4.4L46 10l-4.4 1.6L40 16l-1.6-4.4L34 10l4.4-1.6z" fill="#FFF1A8"/></svg><span><span class="wm">NOBISHIRO</span><span class="tg">5大特典</span></span></a><br>
+    <span class="chip">特典4　フォローされる</span>
+    <h1>フォローされる「プロフィール」5点チェック</h1>
+  </div>
+</header>
+<main class="article">
+<p>プロフィールは、数秒で伝わるように作ります。上から順に見られる5か所を整えましょう。</p>
+<h2>5点チェック</h2>
+<ol>
+<li><strong>アイコン</strong>：顔かキャラクター。何の人か一目で分かる。一度決めたら変えない</li>
+<li><strong>名前欄</strong>：「名前｜何の人か」。検索されそうな言葉を入れる（例：なごや 1,000円ランチ）</li>
+<li><strong>1〜3行目</strong>：何を発信しているか・フォローすると何が得か・投稿の頻度（守れる数だけ）</li>
+<li><strong>最後の行</strong>：実績（発信に関係あるものだけ）と、リンクは1本（LINEなど）</li>
+<li><strong>固定投稿とハイライト</strong>：代表作3本と、LINE特典の案内</li>
+</ol>
+<h2>書き方の型</h2>
+<div class="copybox"><button type="button" class="copy">コピー</button><pre>名前｜〇〇の人（検索されそうな言葉）
+▶ 〇〇を週〇回紹介
+▶ フォローすると〇〇できる
+▶ 〇〇（実績・肩書き）
+↓ 〇〇はこちら</pre></div>
+<h2>書き換えの例</h2>
+<p><strong>グルメ</strong></p>
+<ul>
+<li>前：食べるのが好きな会社員です</li>
+<li>後：名古屋の1,000円ランチ｜平日昼に使える店だけ</li>
+</ul>
+<p><strong>お店の公式</strong></p>
+<ul>
+<li>前：〇〇焼肉の公式アカウントです</li>
+<li>後：〇〇焼肉｜仕込みから見せる焼肉店</li>
+</ul>
+<p><strong>趣味</strong></p>
+<ul>
+<li>前：釣り好きのパパ</li>
+<li>後：釣って食べる｜釣った魚を5分で晩ごはんに</li>
+</ul>
+<h2>フォローされない時の見直し</h2>
+<ul>
+<li>何について発信しているか、1行で分かる？</li>
+<li>誰に向けた発信か、書いてある？</li>
+<li>フォローする得が書いてある？</li>
+<li>投稿の見た目（色・文字）がそろっている？</li>
+</ul>
+<hr>
+<p>プロフィールを整えたら、次は <a href="2.html">特典2の台本テンプレ</a> で投稿を作りましょう。迷ったら <a href="5.html">特典5の無料個別相談</a> で一緒に見ます。</p>
+</main>
+<nav class="back"><a href="index.html">← 5大特典の一覧へもどる</a></nav>
+<footer class="mini">バスりマン（高柳）／ NOBISHIRO<br><a href="../operator.html">運営者情報</a>　<a href="../privacy.html">プライバシーポリシー</a></footer>
+</div>
+<script>
+document.querySelectorAll('.copybox .copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var pre=b.parentNode.querySelector('pre'),t=pre.textContent;
+    var ok=function(){b.textContent='コピーしました';setTimeout(function(){b.textContent='コピー'},1800)};
+    var ng=function(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='選択しました'};
+    try{navigator.clipboard.writeText(t).then(ok,ng)}catch(e){ng()}
+  });
+});
+</script>
+</body>
+</html>

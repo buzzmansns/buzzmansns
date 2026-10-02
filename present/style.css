@@ -1,0 +1,67 @@
+/* NOBISHIRO 公式LINE 5大特典（受け取りページ・特典ページ共通）— LP（buzzmansns.github.io/buzzmansns/）と同じ見た目 */
+:root{
+  --pk:#E1306C; --pk2:#FF5E7E; --or2:#FFA53D;
+  --grad:linear-gradient(135deg,#FFA53D 0%,#FF5E7E 55%,#E1306C 100%);
+  --bg:#FFF7F2; --card:#FFFFFF; --peach:#FFE9DD; --ink:#2B2430; --muted:#6E626A; --rule:#F3DCD4;
+  --gold:#FFD166; --line:#06C755; --line-dk:#049A42; --link:#C2185B;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Zen Kaku Gothic New',"Hiragino Sans","Yu Gothic",system-ui,sans-serif;font-size:16px;line-height:1.85;font-feature-settings:"palt";word-break:auto-phrase;overflow-wrap:anywhere}
+a{color:var(--link)}
+img{max-width:100%;height:auto;display:block}
+.rd{font-family:'M PLUS Rounded 1c','Zen Kaku Gothic New',sans-serif;font-weight:900}
+.num{font-family:'Poppins','Zen Kaku Gothic New',sans-serif;font-weight:800}
+.nb{display:inline-block}
+.page{max-width:640px;margin:0 auto;background:var(--bg)}
+@media (min-width:700px){body{background:#F6E9E2}.page{box-shadow:0 0 40px rgba(0,0,0,.08)}}
+
+/* ロゴ（LPと同じ） */
+.logo{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:#fff}
+.logo svg{width:36px;height:36px;flex:none}
+.logo .wm{font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:22px;letter-spacing:.06em;line-height:1}
+.logo .tg{display:block;font-weight:700;font-size:10px;letter-spacing:.2em;margin-top:3px;opacity:.95}
+
+/* 頭の帯 */
+.band{background:var(--grad);color:#fff;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:auto -20% -45% auto;width:70%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.12)}
+.band .in{position:relative;padding:18px 20px 26px}
+.chip{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.55);color:#fff;font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;margin-top:14px}
+.band h1{font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:clamp(21px,6vw,28px);line-height:1.45;margin:10px 0 0;text-shadow:0 2px 10px rgba(0,0,0,.12)}
+
+/* 特典ページの本文 */
+.article{padding:6px 20px 36px}
+.article h2{font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:20px;line-height:1.45;margin:32px 0 10px;padding:6px 12px;border-left:6px solid var(--pk);background:var(--card);border-radius:0 10px 10px 0}
+.article h3{font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:17px;margin:22px 0 6px}
+.article p{margin:10px 0}
+.article ul,.article ol{padding-left:1.4em;margin:8px 0}
+.article li{margin:4px 0}
+.article strong{background:linear-gradient(transparent 60%,#FFE3CC 60%)}
+.article hr{border:0;border-top:2px dashed var(--rule);margin:26px 0}
+blockquote{margin:14px 0;padding:12px 14px;background:var(--peach);border-radius:12px}
+blockquote p{margin:4px 0}
+blockquote ul{margin:4px 0;padding-left:1.3em}
+.tbl{overflow-x:auto;margin:12px 0;border:1px solid var(--rule);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.6}
+table.wide{min-width:520px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+th{background:var(--peach);font-weight:700}
+tr:last-child td{border-bottom:0}
+.copybox{position:relative;margin:14px 0;background:var(--card);border:2px solid var(--pk);border-radius:14px}
+.copybox pre{margin:0;padding:40px 14px 14px;white-space:pre-wrap;font-family:inherit;font-size:15px;line-height:1.8}
+.copybox .copy{position:absolute;top:8px;right:8px;appearance:none;border:0;border-radius:999px;background:var(--pk);color:#fff;font:inherit;font-size:13px;font-weight:700;padding:4px 14px;cursor:pointer}
+.copybox::before{content:"コピーして使う";position:absolute;top:10px;left:14px;font-size:12px;font-weight:700;color:var(--pk)}
+
+/* ボタン（LPのCTAと同じ黒地＋グラデの丸） */
+.get{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-family:'M PLUS Rounded 1c',sans-serif;font-weight:900;font-size:16.5px;line-height:1.3;padding:14px 16px;border-radius:999px;background:var(--ink);color:#fff;box-shadow:0 8px 20px rgba(43,36,48,.28);text-align:center}
+.get:active{transform:scale(.98)}
+.get.line{background:var(--line);box-shadow:0 4px 0 var(--line-dk)}
+.get.ghost{background:var(--card);color:var(--ink);border:2px solid var(--ink);box-shadow:none}
+.hint{text-align:center;font-size:14.5px;font-weight:700;margin:8px 0 0}
+
+/* 下のナビとフッター */
+.back{padding:0 20px 24px}
+.back a{display:block;text-align:center;background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:12px;font-weight:700;text-decoration:none;color:var(--ink)}
+footer.mini{background:#2B2430;color:#E4DCE1;font-size:13px;line-height:1.75;text-align:center;padding:20px 16px 30px}
+footer.mini a{color:#fff}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}

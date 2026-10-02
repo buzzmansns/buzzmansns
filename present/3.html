@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>スクロールが止まる「つかみ」30選｜NOBISHIRO 5大特典</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Poppins:wght@700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+<header class="band">
+  <div class="in">
+    <a class="logo" href="index.html" aria-label="5大特典の一覧へ"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="26" width="8" height="14" rx="3" fill="#fff" opacity=".8"/><rect x="18" y="18" width="8" height="22" rx="3" fill="#fff" opacity=".9"/><rect x="30" y="8" width="8" height="32" rx="3" fill="#fff"/><path d="M40 4l1.6 4.4L46 10l-4.4 1.6L40 16l-1.6-4.4L34 10l4.4-1.6z" fill="#FFF1A8"/></svg><span><span class="wm">NOBISHIRO</span><span class="tg">5大特典</span></span></a><br>
+    <span class="chip">特典3　冒頭で止める</span>
+    <h1>スクロールが止まる「つかみ」30選</h1>
+  </div>
+</header>
+<main class="article">
+<p>リールは、最初の1〜2秒で「え？」と思わせるのが勝負です。そのまま使える言い回しを30個集めました。「〇〇」を自分のネタに入れ替えて使ってください。</p>
+<p><strong>使い方</strong>：1本に1つだけ。テロップで大きく出して、声でも言う。〇の数字は本当の値だけを入れる。</p>
+<h2>常識をひっくり返す</h2>
+<div class="copybox"><button type="button" class="copy">コピー</button><pre>〇〇を探すなら、ランキングは見ないで
+〇〇、実は△△の方がおいしい
+行列に並ぶ前に、この1本だけ見て
+その〇〇、もったいない食べ方してない？
+〇〇は、この頼み方が正解
+高い〇〇より、この〇〇</pre></div>
+<h2>数字で止める</h2>
+<div class="copybox"><button type="button" class="copy">コピー</button><pre>〇円以下でお腹いっぱいになる〇〇3選
+〇〇駅から歩いて〇分以内の△△だけ
+通って〇年の常連が頼むのは、この1品
+開店〇分で売り切れる〇〇
+〇円で、この量
+〇回行って分かった、〇〇の正解</pre></div>
+<h2>続きが気になる</h2>
+<div class="copybox"><button type="button" class="copy">コピー</button><pre>最後の1皿で、全部ひっくり返りました
+店員さんに聞いたら、裏メニューがありました
+この店、看板を見落とすとたどり着けない
+頼む前に、これだけは知っておいて
+この値段の理由、最後に分かります
+実はここ、〇〇の2階にあります</pre></div>
+<h2>自分ごとにさせる</h2>
+<div class="copybox"><button type="button" class="copy">コピー</button><pre>〇〇で働いている人、昼休みはここへ
+一人でも入りやすい〇〇、見つけました
+記念日に失敗したくない人へ
+子連れでも気まずくない〇〇
+〇〇が苦手な人でも食べられる△△
+給料日前でも行ける〇〇</pre></div>
+<h2>お店・趣味の発信に</h2>
+<div class="copybox"><button type="button" class="copy">コピー</button><pre>店主が一番食べてほしいのは、実はこれ
+この仕込み、毎朝〇時からやっています
+〇〇歴〇年が、最初にそろえる道具
+釣った魚、〇分でこうなります
+始めたばかりの人がやりがちな〇〇のミス
+〇〇の道具は、高いのより△△</pre></div>
+<hr>
+<p>どのつかみが合うかは、1つずつ試して数字で見ます（見方は <a href="1.html">特典1</a>）。迷ったら <a href="5.html">特典5の無料個別相談</a> で一緒に見ます。</p>
+</main>
+<nav class="back"><a href="index.html">← 5大特典の一覧へもどる</a></nav>
+<footer class="mini">バスりマン（高柳）／ NOBISHIRO<br><a href="../operator.html">運営者情報</a>　<a href="../privacy.html">プライバシーポリシー</a></footer>
+</div>
+<script>
+document.querySelectorAll('.copybox .copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var pre=b.parentNode.querySelector('pre'),t=pre.textContent;
+    var ok=function(){b.textContent='コピーしました';setTimeout(function(){b.textContent='コピー'},1800)};
+    var ng=function(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='選択しました'};
+    try{navigator.clipboard.writeText(t).then(ok,ng)}catch(e){ng()}
+  });
+});
+</script>
+</body>
+</html>
